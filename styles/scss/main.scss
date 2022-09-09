@@ -1,0 +1,14 @@
+
+@use "../scss/layout/grid";
+@use "../scss/layout/article";
+
+@use "../scss/components/articleHead";
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+*{
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    font-family: "Barlow Semi Condensed";
+}

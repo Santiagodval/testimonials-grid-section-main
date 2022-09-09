@@ -1,0 +1,86 @@
+@use "../utilities/variables" as *;
+
+article {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    
+    position: relative;
+
+
+    &>* {
+        margin: 0 0 1.5rem 0;
+    }
+
+    p {
+        font-weight: 600;
+        font-size: 1.5em!important;
+        opacity: 80%;
+    }
+
+    blockquote {
+        opacity: 50%;
+    }
+
+    h4 {
+        opacity: 50%;
+    }
+
+    &:nth-child(1) {
+        background-color: $moderateViolet;
+        color: white;
+
+        &::before {
+            content: "\0022";
+            font-family: monospace;
+            position: absolute;
+            right: 5%;
+            top: -60px;
+            font-size: 400px;
+            opacity: 50%;
+        }
+
+        img {
+            border: solid 2px hsl(263, 42%, 65%);
+        }
+
+        grid-area: one;
+
+    }
+
+    &:nth-child(2) {
+        color: white;
+        background-color: $veryDarkGrayishBlue;
+
+        grid-area: two;
+    }
+
+    &:nth-child(3) {
+        color: black;
+
+        background-color: white;
+
+        grid-area: three;
+    }
+
+    &:nth-child(4) {
+        color: white;
+
+        background-color: $veryDarkBlackishBlue;
+
+        img{
+            border: solid 2px $moderateViolet;
+        }
+
+        grid-area: four;
+    }
+
+    &:nth-child(5) {
+        color: black;
+
+        background-color: white;
+
+        grid-area: five;
+    }
+}

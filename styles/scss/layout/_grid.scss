@@ -1,0 +1,22 @@
+body {
+    display: grid;
+
+    justify-items: center;
+    @media (min-width: 580px) {
+        .mainDiv{
+            
+            width: 70%;
+
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 1fr;
+
+            grid-template-areas:
+            "one one two five"
+            "three four four five";
+        }
+            
+    }
+
+}
