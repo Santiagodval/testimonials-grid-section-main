@@ -13,33 +13,33 @@ body {
   }
 }
 
-article {
+main > article {
   margin: 1.5rem;
   padding: 1.5rem;
   border-radius: 1rem;
   font-weight: 500;
   position: relative;
 }
-article > * {
+main > article > * {
   margin: 0 0 1.5rem 0;
 }
-article p {
+main > article p {
   font-weight: 600;
   font-size: 1.5em !important;
   opacity: 80%;
 }
-article blockquote {
+main > article blockquote {
   opacity: 50%;
 }
-article h4 {
+main > article h4 {
   opacity: 50%;
 }
-article:nth-child(1) {
+main > article:nth-child(1) {
   background-color: hsl(263deg, 55%, 52%);
   color: white;
   grid-area: one;
 }
-article:nth-child(1)::before {
+main > article:nth-child(1)::before {
   content: '"';
   font-family: monospace;
   position: absolute;
@@ -48,28 +48,28 @@ article:nth-child(1)::before {
   font-size: 400px;
   opacity: 50%;
 }
-article:nth-child(1) img {
+main > article:nth-child(1) img {
   border: solid 2px hsl(263deg, 42%, 65%);
 }
-article:nth-child(2) {
+main > article:nth-child(2) {
   color: white;
   background-color: hsl(217deg, 19%, 35%);
   grid-area: two;
 }
-article:nth-child(3) {
+main > article:nth-child(3) {
   color: black;
   background-color: white;
   grid-area: three;
 }
-article:nth-child(4) {
+main > article:nth-child(4) {
   color: white;
   background-color: hsl(219deg, 29%, 14%);
   grid-area: four;
 }
-article:nth-child(4) img {
+main > article:nth-child(4) img {
   border: solid 2px hsl(263deg, 55%, 52%);
 }
-article:nth-child(5) {
+main > article:nth-child(5) {
   color: black;
   background-color: white;
   grid-area: five;
